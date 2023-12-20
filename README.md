@@ -136,3 +136,63 @@ printf("%d", i);
 return 0;
 
 }
+
+call by the value call by regeration
+
+#include <stdio.h>
+void swap(int *x,int *y)
+{
+    int temp =*x;
+    *x =*y;
+    *y = temp;
+    
+}
+int main()
+{
+    int a=7;
+    int b=8;
+    printf("The value is %d %d\n",a,b);
+    swap(&a,&b);
+    printf("The value is %d %d\n",a,b);
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Find the area of sqare useing function
+without return without arg
+
+// Online C compiler to run C program online
+#include <stdio.h>
+void sq();
+void sq()
+{
+    int a,sq;
+    printf("Enter the lenth : ");
+    scanf("%d",&a);
+    sq = a*a;
+    printf("%d",sq);
+}
+
+int main() {
+    sq();
+    
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+user sq
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+void sq();
+void sq()
+{
+    int a,sq;
+    printf("Enter the value : ");
+    scanf("%d",&a);
+    sq = sqrt(a);
+    printf("%d",sq);
+}
+
+int main() {
+    sq();
+    
+}
